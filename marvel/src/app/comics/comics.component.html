@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="columns is-multiline is-mobile">
+        <div class="column is-3" *ngFor="let comic of comics;">
+            <div class="comic" [routerLink]="['comic/detail', comic.id]">
+                <img src="https://img.icons8.com/plasticine/100/000000/star.png" *ngIf="comic.isRare" class="rare">
+                <img [src]="comic.image" [alt]="comic.title" class="capa" />
+                <span>{{ comic.title }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

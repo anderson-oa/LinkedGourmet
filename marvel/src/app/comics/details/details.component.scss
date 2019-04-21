@@ -1,0 +1,40 @@
+.detail{
+    background:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+
+        img.close{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 40px;
+            background: #fff;
+            border-radius: 100px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .group{
+            padding: 1rem;
+            display: flex;
+            flex-flow: row wrap;
+
+            .capa{
+                width: 295px;
+
+                img{
+                    width: 100%;
+                    height: 455px;
+                }
+            }
+
+            .description{
+                flex: 1;            
+                margin-left: 2rem;
+            }
+        }
+}

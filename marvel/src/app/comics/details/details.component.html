@@ -1,0 +1,25 @@
+<div class="detail">
+  <img src="https://img.icons8.com/small/50/000000/delete-sign.png" class="close" [routerLink]="['/']">
+  <div class="group" *ngIf="comic">
+    <div class="capa">
+      <img [src]="getImage()">
+    </div>
+    <div class="description">
+      <h1 class="is-size-1">{{ comic.title }}</h1>
+      <hr>
+      <div class="columns is-multiline is-mobile">
+        <div class="column is-4" *ngFor="let creator of comic.creators.items;">
+          <b>{{ creator.role }}</b><br>
+          {{ creator.name }}
+        </div>
+      </div>
+      <div class="columns is-multiline is-mobile">
+        <div class="column is-4" *ngFor="let dt of comic.dates;">
+          <b>{{ dt.type }}</b><br>
+          {{ dt.date }}
+        </div>
+      </div>
+      <p>{{ comic.description }}</p>
+    </div>
+  </div>
+</div>

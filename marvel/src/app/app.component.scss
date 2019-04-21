@@ -1,0 +1,30 @@
+.marvel-header{    
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    .title{
+        font-family: 'Pacifico', cursive;        
+        font-size: 30pt;
+        text-align: center;
+        padding: 1rem;
+        letter-spacing: 5px;
+    }
+}
+
+.marvel-main{
+    min-height: calc(100% - 56px);
+    padding-top: 76px;    
+}
+
+.marvel-footer{
+    .container{
+        text-align: center;        
+        padding: 1rem;
+        color: rgba(0,0,0, .5);
+        border-top: 1px solid #e1e4e8;        
+    }
+}
